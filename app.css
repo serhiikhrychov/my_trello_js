@@ -1,0 +1,126 @@
+body {
+	background: #04A1BF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.toDo {
+    background-color: yellow;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.mainDiv {
+    display: flex;
+}
+
+.new-card {
+    margin-top: 40px;
+    margin-left: 5px;
+    font-size: 14px;
+    position: absolute;
+}
+
+.icon-add::before {
+    content: "+";
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 38px;
+    min-height: 45px;
+    position: relative;
+
+}
+
+div[class *= "column" ] {
+    background-color: rgb(223, 215, 215);
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 5px 20px 20px 20px; 
+    font-weight: bold;
+    min-width:25px;
+    min-height:100px;
+    min-width: 282px;
+    max-width: 282px;
+}
+
+.text-area {
+    position:absolute; 
+    display: block;
+    width: 239px;
+    height: 33px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+.column-to-do {
+    flex-direction: column;
+    align-self: auto;
+    flex: 1 1 auto;
+    margin-right: 10px;
+}
+
+.column-in-progress {
+    flex-direction: column;
+    align-self: auto;
+    flex: 1 1 auto;
+    margin-right: 10px;
+    
+}
+
+.column-done {
+    flex-direction: column;
+    align-self: auto;
+    flex: 1 1 auto;
+    margin-right: 10px;
+}
+
+.saveBtn {
+    margin-top: 50px;
+    margin-left: 5px;
+    font-size: 14px;
+    position: absolute;
+}
+
+div.column-to-do {
+    height: fit-content;
+    margin-top: 10px;
+} 
+
+.task-details {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 5px 20px 20px 20px;    
+}
+
+.list-card-details {
+    margin-top: 10px;
+}
+
+div > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+    margin: 0.5em -1em 0.5em;
+}
+
+.draggable {
+    padding: 1rem;
+    background-color: #ffe0ec ;
+    cursor: move;
+}
+
+.task.dragging {
+    opacity: .5;
+}
+
+#emptydiv {
+    padding: 5px 20px 20px 20px;  
+}
+
+
